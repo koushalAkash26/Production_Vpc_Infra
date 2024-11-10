@@ -160,9 +160,6 @@ resource "aws_security_group" "Ec2security_group" {
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]  # Allows traffic from any IPv4 address
   }
-
-
-
   egress {
     from_port        = 0
     to_port          = 0
@@ -185,9 +182,9 @@ resource "aws_key_pair" "MyProjectKey" {
   public_key = tls_private_key.ProjectKeyAlgorithm.public_key_openssh
 }
 
-output "private_key_pem" {
-  value     = tls_private_key.ProjectKeyAlgorithm.private_key_pem
-  sensitive = true  
+resource "local_file" "MyProjectKey" {
+    content  = tls_private_key.ProjectKeyAlgorithm.private_key_pem
+    filename = "MyProjectKey"
 }
 #----------Launch Template---------------
 resource "aws_launch_template" "MyProject_launch_template" {

@@ -152,8 +152,6 @@ This project is licensed under the MIT License.
 
 ## Author
 
-👤 **[Akash Koushal](https://github.com/koushalAkash26)**  
+👤 **[Koushal Akash](https://github.com/koushalAkash26)**  
 
 ---
-
-Let me know if you'd like further adjustments!

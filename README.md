@@ -40,7 +40,7 @@ The following diagram depicts the infrastructure's architecture:
 ## Prerequisites
 
 - AWS CLI installed and configured with appropriate credentials.
-- Terraform v1.0.0 or newer.
+- Terraform v5.74.0 or newer.
 - Graphviz (if using the Python diagrams library for visualization).
 - Python 3.x for diagram generation.
 
